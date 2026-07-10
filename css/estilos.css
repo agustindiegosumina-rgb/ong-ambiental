@@ -1,0 +1,626 @@
+/* ========================= */
+/* Variables CSS */
+/* ========================= */
+
+:root {
+  --verde-principal: #2E7D32;
+  --verde-oscuro: #1B5E20;
+  --fondo: #F1F8E9;
+  --blanco: #FFFFFF;
+  --texto: #263238;
+  --color-primario: #2E7D32;
+  --color-secundario: #1B5E20;
+  --color-acento: #2E7D32;
+}
+/* ========================= */
+/* Reset */
+/* ========================= */
+
+*{ box-sizing: border-box; margin: 0; padding: 0;}
+
+
+/* ========================= */
+/* Body */
+/* ========================= */
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  max-width: 1100px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body main,
+body .card,
+body input,
+body select,
+body textarea {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ========================= */
+/* Header */
+/* ========================= */
+
+header {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--blanco);
+  margin-bottom: 10px;
+}
+
+/* ========================= */
+/* Navegacion */
+/* ========================= */
+
+nav {
+  background-color: var(--verde-oscuro);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* Contenido Principal */
+/* ========================= */
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  background-color: var(--blanco);
+  padding: 25px;
+}
+
+/* ========================= */
+/* Secciones */
+/* ========================= */
+
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+/* ========================= */
+/* Articles */
+/* ========================= */
+
+article {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 3px solid var(--verde-principal);
+}
+
+/* ========================= */
+/* Headings */
+/* ========================= */
+
+h1 {
+  color: var(--verde-oscuro);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: var(--verde-principal);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--texto);
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* ========================= */
+/* Párrafos */
+/* ========================= */
+
+p {
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+
+footer {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+/* ============================================================
+   INTEGRANTE 4 — Tabla, formulario e imágenes
+   Cubre: table, form, inputs, textarea e img
+   ============================================================ */
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color: var(--color-primario);
+  color: #ffffff;
+}
+
+thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eef3f6;
+}
+
+tbody td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #dce3e8;
+  color: var(--color-texto);
+}
+
+tbody tr:hover {
+  background-color: #d9eaf0;
+}
+
+tfoot td {
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  border-top: 2px solid var(--color-primario);
+  color: var(--color-secundario);
+}
+
+
+/* ----------------------------------------------------------
+   Formulario
+   ---------------------------------------------------------- */
+
+form {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: var(--color-secundario);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #b0bec5;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-texto);
+  background-color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-primario);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  background-color: var(--color-acento);
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: var(--color-secundario);
+}
+
+
+/* ----------------------------------------------------------
+   Imágenes
+   ---------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.img-destacada {
+  margin: 1rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+figure {
+  margin: 1.5rem 0;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #607080;
+  margin-top: 0.4rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ========================= */
+/* Bootstrap - personalizaciones */
+/* ========================= */
+
+header {
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--verde-principal);
+}
+
+.navbar .navbar-brand {
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.navbar .nav-link {
+  color: var(--blanco);
+  font-weight: 600;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.navbar .nav-link:hover {
+  background-color: var(--verde-oscuro);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-title {
+  color: var(--verde-principal);
+}
+/* ========================= */
+/* Integrante 3 - Flexbox */
+/* ========================= */
+
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  flex: 1 1 120px;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes-sociales p {
+  flex-basis: 100%;
+  margin: 0 0 8px;
+}
+
+
+/* ============================================================
+   INTEGRANTE 4 — Posicionamiento y personalización Bootstrap
+   Cubre:
+     · Hero banner con position:relative / position:absolute
+     · Badge sobre card con position:absolute
+     · Navbar sticky con position:sticky
+     · Botón personalizado sobre Bootstrap
+     · Hover y transiciones sobre componentes Bootstrap
+   ============================================================ */
+
+
+/* ----------------------------------------------------------
+   Posicionamiento — Hero banner
+   El contenedor es relative; el texto queda absolute encima
+   ---------------------------------------------------------- */
+
+.hero-banner {
+  position: relative;          
+  width: 100%;
+  max-height: 420px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  margin: 0;
+  filter: brightness(0.55);
+}
+
+.hero-texto {
+  position: absolute;           
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--blanco);
+  width: 90%;
+}
+
+.hero-texto h1 {
+  color: var(--blanco);
+  font-size: clamp(1.5rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-texto p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: 1.2rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ----------------------------------------------------------
+   Posicionamiento — Badge sobre card
+   Usa position:absolute dentro de .card-con-badge (relative)
+   ---------------------------------------------------------- */
+
+.card-con-badge {
+  position: relative;           
+}
+
+.badge-destacado {
+  position: absolute;           
+  top: 12px;
+  right: 12px;
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+  z-index: 1;
+}
+
+
+/* ----------------------------------------------------------
+   Posicionamiento — Navbar sticky
+   Se queda visible en la parte superior al hacer scroll
+   ---------------------------------------------------------- */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* ----------------------------------------------------------
+   Bootstrap - personalización de botones
+   Botón principal con colores de la ONG
+   ---------------------------------------------------------- */
+
+.btn-hero {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  border: 2px solid var(--blanco);
+  padding: 0.6rem 1.8rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-hero:hover {
+  background-color: var(--blanco);
+  color: var(--verde-oscuro);
+  transform: translateY(-2px);
+}
+
+#btnTema {
+  background-color: var(--blanco);
+  color: var(--verde-oscuro);
+  border: 2px solid var(--blanco);
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+#btnTema:hover {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  transform: translateY(-2px);
+}
+
+.btn-primary-ong {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  border: none;
+  padding: 0.45rem 1.2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-primary-ong:hover {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------------------------
+   Bootstrap - personalización de cards
+   Mejora los hover y colores usando variables de la ONG
+   ---------------------------------------------------------- */
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.2);
+}
+
+.card-title {
+  color: var(--verde-principal);
+  font-weight: 700;
+}
+
+
+/* ----------------------------------------------------------
+   Bootstrap - personalización de la navbar
+   Fuerza los colores de la ONG sobre los estilos de Bootstrap
+   ---------------------------------------------------------- */
+
+.navbar {
+  background-color: var(--verde-principal) !important;
+}
+
+.navbar .navbar-brand {
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: color 0.2s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: #c8e6c9;
+}
+
+.navbar .nav-link {
+  color: var(--blanco) !important;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: var(--verde-oscuro);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* modo oscuro */
+body.modo-oscuro {
+  --fondo: #121212;
+  --texto: #e8e8e8;
+  --verde-principal: #4caf50;
+}
+
+body.modo-oscuro main,
+body.modo-oscuro .card {
+  background-color: #1e1e1e;
+  color: var(--texto);
+}
+
+body.modo-oscuro input,
+body.modo-oscuro select,
+body.modo-oscuro textarea{
+  background-color: #1e1e1e;
+  color: var(--texto);
+  border-color: #555;
+}
+
+body.modo-oscuro ::placeholder{
+  color: #aaa;
+}
